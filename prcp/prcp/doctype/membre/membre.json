@@ -1,0 +1,346 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 22:38:49.757031",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "onglet_etat_civil",
+  "section_etat_civil",
+  "civilite",
+  "prenom",
+  "column_break_pfsx",
+  "nom",
+  "nom_naissance",
+  "column_break_gveb",
+  "date_naissance",
+  "nationalite",
+  "section_coordonnees",
+  "adresse",
+  "column_break_sasc",
+  "code_postal",
+  "commune",
+  "toulouse_metropole",
+  "column_break_gqbc",
+  "telephone",
+  "email",
+  "onglet_prcp",
+  "date_arrivee",
+  "date_sortie",
+  "raison_sortie",
+  "column_break_akur",
+  "vehicule",
+  "logement",
+  "column_break_fhzs",
+  "cotisation_a_jour",
+  "consentement_email",
+  "consentement_image",
+  "onglet_adherent",
+  "date_accueil",
+  "column_break_jznc",
+  "accueillant",
+  "column_break_chfl",
+  "objectif",
+  "section_france_travail",
+  "cause_chomage",
+  "date_inscription_france_travail",
+  "column_break_ryhu",
+  "agence_france_travail",
+  "referent_france_travail",
+  "column_break_ibep",
+  "section_break_olyp",
+  "suivi",
+  "onglet_benevole",
+  "type",
+  "onglet_liens"
+ ],
+ "fields": [
+  {
+   "fieldname": "civilite",
+   "fieldtype": "Select",
+   "label": "Civilit\u00e9",
+   "options": "\nMadame\nMonsieur",
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "nom_naissance",
+   "fieldtype": "Data",
+   "label": "Nom de naissance"
+  },
+  {
+   "fieldname": "date_naissance",
+   "fieldtype": "Date",
+   "label": "Date de naissance"
+  },
+  {
+   "fieldname": "column_break_pfsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gveb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_coordonnees",
+   "fieldtype": "Section Break",
+   "label": "Coordonn\u00e9es"
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Small Text",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "code_postal",
+   "fieldtype": "Data",
+   "label": "Code postal"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commune"
+  },
+  {
+   "fieldname": "column_break_sasc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "toulouse_metropole",
+   "fieldtype": "Check",
+   "label": "Toulouse m\u00e9trop\u00f4le"
+  },
+  {
+   "fieldname": "column_break_gqbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "date_arrivee",
+   "fieldtype": "Date",
+   "label": "Date d'arriv\u00e9e"
+  },
+  {
+   "default": "0",
+   "fieldname": "consentement_email",
+   "fieldtype": "Check",
+   "label": "Consentement aux emails"
+  },
+  {
+   "default": "0",
+   "fieldname": "consentement_image",
+   "fieldtype": "Check",
+   "label": "Consentement \u00e0 l'image"
+  },
+  {
+   "fieldname": "onglet_adherent",
+   "fieldtype": "Tab Break",
+   "label": "Adh\u00e9rent"
+  },
+  {
+   "default": "Fran\u00e7aise",
+   "fieldname": "nationalite",
+   "fieldtype": "Select",
+   "label": "Nationalit\u00e9",
+   "options": "Fran\u00e7aise\nAutre"
+  },
+  {
+   "fieldname": "date_accueil",
+   "fieldtype": "Date",
+   "label": "Date d'accueil"
+  },
+  {
+   "fieldname": "accueillant",
+   "fieldtype": "Link",
+   "label": "Accueillant",
+   "options": "Membre"
+  },
+  {
+   "fieldname": "section_etat_civil",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "onglet_etat_civil",
+   "fieldtype": "Tab Break",
+   "label": "Etat civil"
+  },
+  {
+   "fieldname": "logement",
+   "fieldtype": "Select",
+   "label": "Logement",
+   "options": "\noui\nnon"
+  },
+  {
+   "fieldname": "column_break_jznc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_chfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_france_travail",
+   "fieldtype": "Section Break",
+   "label": "France Travail"
+  },
+  {
+   "fieldname": "objectif",
+   "fieldtype": "Select",
+   "label": "Principal objectif recherch\u00e9",
+   "options": "\nAccompagnement recherche emploi\nAccompagnement bureautique\nConstitution de dossier\nConversation langues \u00e9trang\u00e8res\nConvivialit\u00e9\nCr\u00e9ation d'entreprise\nD\u00e9fense des droits\nD\u00e9marches Administratives\nInternet / Messagerie\nRecherche de formation\nSavoir de Base\nTRE (Techniques Recherche Emploi)"
+  },
+  {
+   "fieldname": "vehicule",
+   "fieldtype": "Select",
+   "label": "V\u00e9hicule",
+   "options": "\noui\nnon"
+  },
+  {
+   "fieldname": "cause_chomage",
+   "fieldtype": "Select",
+   "label": "Cause du ch\u00f4mage",
+   "options": "\nLicenciement\nLicenciement \u00e9conomique\nFin de contrat de travail\nFin d'\u00e9tudes\nD\u00e9mission\nD\u00e9part du pays d'origine\nD\u00e9m\u00e9nagement\nFin d'activit\u00e9 professionnelle\nRecherche 1er emploi\nInaptitude au poste"
+  },
+  {
+   "fieldname": "date_inscription_france_travail",
+   "fieldtype": "Date",
+   "label": "Date inscription France Travail"
+  },
+  {
+   "fieldname": "agence_france_travail",
+   "fieldtype": "Select",
+   "label": "Agence France Travail",
+   "options": "\nBellefontaine\nBlagnac\nCartoucherie\nColomiers\nJolimont\nLa Plaine\nMontaudran\nMuret\nOccitanie\nSaint-Georges\nSaint-Jean\nSaint-Michel\nToulouse\nToulouse Occitane"
+  },
+  {
+   "fieldname": "referent_france_travail",
+   "fieldtype": "Data",
+   "label": "R\u00e9f\u00e9rent France Travail"
+  },
+  {
+   "fieldname": "column_break_ryhu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ibep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_olyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "suivi",
+   "fieldtype": "Text Editor",
+   "label": "Suivi"
+  },
+  {
+   "fieldname": "onglet_benevole",
+   "fieldtype": "Tab Break",
+   "label": "B\u00e9n\u00e9vole"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "B\u00e9n\u00e9vole\nStagiaire\nPartenaire"
+  },
+  {
+   "default": "0",
+   "fieldname": "cotisation_a_jour",
+   "fieldtype": "Check",
+   "label": "Cotisation \u00e0 jour"
+  },
+  {
+   "fieldname": "onglet_prcp",
+   "fieldtype": "Tab Break",
+   "label": "PRCP"
+  },
+  {
+   "fieldname": "date_sortie",
+   "fieldtype": "Date",
+   "label": "Date de sortie"
+  },
+  {
+   "fieldname": "column_break_akur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fhzs",
+   "fieldtype": "Column Break",
+   "label": "    "
+  },
+  {
+   "depends_on": "eval: doc.date_sortie",
+   "fieldname": "raison_sortie",
+   "fieldtype": "Select",
+   "label": "Raison de la sortie",
+   "options": "Formation\nEmploi\nRetraite\nD\u00e9c\u00e8s\nAutre"
+  },
+  {
+   "fieldname": "onglet_liens",
+   "fieldtype": "Tab Break",
+   "label": "Cahier de liaison",
+   "show_dashboard": 1
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Journal",
+   "link_fieldname": "membre"
+  }
+ ],
+ "modified": "2024-06-24 00:04:18.589564",
+ "modified_by": "Administrator",
+ "module": "PRCP",
+ "name": "Membre",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nom"
+}

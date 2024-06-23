@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CL{YYYY}-{MM}-{###}",
+ "creation": "2024-06-23 23:45:39.892832",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "membre",
+  "column_break_zkaj",
+  "motif_visite",
+  "accompagnant",
+  "column_break_prfl",
+  "commentaire"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "membre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Membre",
+   "options": "Membre",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "motif_visite",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Motif de visite",
+   "options": "\n1er accueil\nAtelier bureautique \u00ab Acc\u00e8s libre \u00bb\nAtelier bureautique \u00ab APTIC \u00bb\nAtelier bureautique \u00ab D\u00e9couverte du num\u00e9rique \u00bb\nAtelier bureautique \u00ab Les usages num\u00e9riques \u00bb\nAtelier bureautique \u00ab PLIE \u00bb\nAtelier bureautique \u00ab P\u00f4le Emploi num\u00e9rique \u00bb\nAtelier bureautique \u00ab Traitement de texte, tableur, internet\u2026 \u00bb\nAtelier (autres)\nAtelier conversation Anglaise\nAtelier culturel et loisirs cr\u00e9atifs\nAtelier Coaching Pro\nAtelier Conseil en Image\nAtelier de l\u2019emploi\nAtelier savoir de base\nAtelier Sophrologie\nAtelier Technique Recherche Emploi (CV, lettre de motivation, etc)\nAutres visites\nB\u00e9n\u00e9volat (accueil)\nB\u00e9n\u00e9volat (atelier)\nB\u00e9n\u00e9volat (gestion et administration)\nB\u00e9n\u00e9volat (MNCP, d\u00e9fense des droits)\nB\u00e9n\u00e9volat (r\u00e9union)\nConvivialit\u00e9\nD\u00e9fense des droits\nDroit commun, constitution de dossier\nEntretien\nPartenariat ou bienfaiteur\nPtit d\u00e9j info\nRepas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accompagnant",
+   "fieldtype": "Link",
+   "label": "Accompagnant",
+   "options": "Membre"
+  },
+  {
+   "fieldname": "commentaire",
+   "fieldtype": "Small Text",
+   "label": "Commentaire"
+  },
+  {
+   "fieldname": "column_break_zkaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_prfl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-23 23:59:27.993807",
+ "modified_by": "Administrator",
+ "module": "PRCP",
+ "name": "Journal",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "motif_visite"
+}
